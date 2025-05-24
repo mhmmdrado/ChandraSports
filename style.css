@@ -1,0 +1,214 @@
+:root {
+    --primary-color: #ff4444;
+    --secondary-color: #000000;
+    --accent-color: #ffd700;
+    --background-dark: #1a1a1a;
+    --background-light: #2d2d2d;
+}
+
+/* Custom styles */
+body {
+    padding-top: 56px;
+    background-color: var(--background-light);
+    color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--background-dark) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Card styles */
+.card {
+    background-color: var(--background-dark);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Cart icon styles */
+.navbar .nav-link i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.navbar .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    background-color: #dc3545;
+    border: 2px solid white;
+}
+
+/* Footer styles */
+html {
+    height: 100%;
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--background-dark);
+    color: white;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 1;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.card-text {
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--background-dark);
+    color: white;
+    padding: 5rem 0;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Form styles */
+.form-control {
+    background-color: var(--background-dark);
+    border: 1px solid var(--primary-color);
+    color: white;
+}
+
+.form-control:focus {
+    background-color: var(--background-dark);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+    color: white;
+}
+
+/* Cart styles */
+#cartItems .card {
+    background-color: var(--background-dark);
+    border: none;
+}
+
+#cartItems .card-body {
+    padding: 1rem;
+}
+
+#totalPrice {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Button styles */
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
